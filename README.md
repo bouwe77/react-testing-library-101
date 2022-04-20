@@ -14,11 +14,15 @@ An introduction to testing React components with Testing Library.
 
 - Debugging with `screen.debug`
 
-- Queries, and which one to use when:
+- `getBy` query
+
+- User events
+
+- Recap of Queries, and which one to use when:
 
   - `getBy`
-  - `queryBy`
   - `await findBy`
+  - `queryBy`
 
 - Asserting with `expect`
 
@@ -27,8 +31,6 @@ An introduction to testing React components with Testing Library.
 - Scope of a test: integration vs unit
 
 - Making components a11y through tests
-
-- User events
 
 # Not in scope
 
