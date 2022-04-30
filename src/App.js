@@ -9,10 +9,23 @@ const story = {
     directions: { 'Go to the castle': 'castle', 'Head into the forest': 'forest' },
   },
   castle: {
-    texts: ['You arrive at the castle.'],
-    directions: { 'Back to the fields': 'field', 'Enter the castle': 'castle' },
+    texts: ['You are standing in front of the castle. The drawbridge is open.'],
+    directions: { 'Back to the fields': 'field', 'Enter the castle': 'insideCastle' },
   },
-  forest: { texts: ['You arrive at the forest.'], directions: { 'Leave the forest': 'field' } },
+  forest: {
+    texts: ["You arrive at the forest. It's so peaceful and quiet here with all the birds singing."],
+    directions: { 'Leave the forest': 'field' },
+  },
+  insideCastle: {
+    texts: ['As you are entering the castle, you hear a loud roar. And there, just in front of you, is the dragon!'],
+    directions: { 'Flee!': 'castle', 'Fight the dragon': 'fight' },
+  },
+  fight: {
+    texts: [
+      'The dragon is spitting fire at you! But you manage to dodge it! And brave as you are, you fight back!',
+      'And after a long battle, you have defeated the dragon! You have saved the princess! Congratulations!',
+    ],
+  },
 }
 
 function App() {
@@ -41,7 +54,7 @@ function App() {
       ))}
 
       <div>
-        {Object.keys(story[location].directions).map((direction) => (
+        {Object.keys(story[location].directions ?? {}).map((direction) => (
           <Button key={direction} onClick={() => goTo(story[location].directions[direction])}>
             {direction}
           </Button>

@@ -22,7 +22,7 @@ test('My Adventure Game', async () => {
   await userEvent.click(toCastle)
 
   // Normally you have to wait for a state update, but because we've already waited for the click, we can just check the text
-  screen.getByText('You arrive at the castle.')
+  screen.getByText('You are standing in front of the castle. The drawbridge is open.')
 
   // Now that we started the game by clicking our first button the introductory text should be gone
   expect(
@@ -34,6 +34,25 @@ test('My Adventure Game', async () => {
   // A "Back to the fields" button should be there
   screen.getByRole('button', { name: 'Back to the fields' })
 
-  // There should also be a "Enter the castle" button
-  screen.getByRole('button', { name: 'Enter the castle' })
+  // Enter the castle by clicking the button
+  const enterTheCastle = screen.getByRole('button', { name: 'Enter the castle' })
+  await userEvent.click(enterTheCastle)
+
+  screen.getByText(
+    'As you are entering the castle, you hear a loud roar. And there, just in front of you, is the dragon!',
+  )
+
+  // Fight the dragon by clicking the button
+  const fightTheDragon = screen.getByRole('button', { name: 'Fight the dragon' })
+  await userEvent.click(fightTheDragon)
+
+  // It's a hell of a fight!
+  screen.getByText(
+    'The dragon is spitting fire at you! But you manage to dodge it! And brave as you are, you fight back!',
+  )
+
+  // YES! You have defeated the dragon and won the game!
+  screen.getByText(
+    'And after a long battle, you have defeated the dragon! You have saved the princess! Congratulations!',
+  )
 })
