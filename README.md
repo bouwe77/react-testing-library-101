@@ -12,11 +12,30 @@ An introduction to testing React components with Testing Library.
 
 - Rendering components
 
+- Scope of a test: integration vs unit
+
 - Debugging with `screen.debug`
 
-- `getBy` query
+- `getBy` queries
+
+  - Getting elements
+  - Implicit expectation: Throws when not found
 
 - User events
+
+  - User events are asynchronous
+
+- `queryBy` queries
+
+  - Does not throw when element not found
+  - Use to check an element is NOT there with `expect`
+
+- Asserting with `expect`
+
+- `findBy` queries
+
+  - For getting elements asynchronously
+  - Use when you need to wait for a promise or rerender
 
 - Recap of Queries, and which one to use when:
 
@@ -24,11 +43,7 @@ An introduction to testing React components with Testing Library.
   - `await findBy`
   - `queryBy`
 
-- Asserting with `expect`
-
 - Avoiding testids and other implementation details
-
-- Scope of a test: integration vs unit
 
 - Making components a11y through tests
 
