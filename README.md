@@ -23,7 +23,13 @@ An introduction to testing React components with Testing Library.
 
 - User events
 
-  - User events are asynchronous
+  - Asynchronous events with `userEvent`
+  - Synchronous events
+
+- `findBy` queries
+
+  - For getting elements asynchronously
+  - Use when you need to wait for a promise or rerender
 
 - `queryBy` queries
 
@@ -31,11 +37,6 @@ An introduction to testing React components with Testing Library.
   - Use to check an element is NOT there with `expect`
 
 - Asserting with `expect`
-
-- `findBy` queries
-
-  - For getting elements asynchronously
-  - Use when you need to wait for a promise or rerender
 
 - Recap of Queries, and which one to use when:
 
