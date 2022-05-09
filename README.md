@@ -2,6 +2,8 @@
 
 An introduction to testing React components with Testing Library.
 
+It's about how to do the actual testing, but not about setting up your environment, etc.
+
 # Topics
 
 - Running tests from the CLI, watch mode, etc.
@@ -51,6 +53,8 @@ An introduction to testing React components with Testing Library.
 
 # Not in scope
 
-- Testing hooks
+- Setting up a project with Jest, etc. (will not cover this at all)
 
-- Mocking
+- Testing hooks (later video)
+
+- Mocking (later video)
