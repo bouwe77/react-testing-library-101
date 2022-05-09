@@ -4,7 +4,7 @@ An introduction to testing React components with Testing Library.
 
 # Topics
 
-- Running tests
+- Running tests from the CLI, watch mode, etc.
 
 - `describe` and `test` blocks
 
