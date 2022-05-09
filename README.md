@@ -19,17 +19,18 @@ An introduction to testing React components with Testing Library.
 - `getBy` queries
 
   - Getting elements
-  - Implicit expectation: Throws when not found
+  - Implicit expectation: Throws when element not found
 
 - User events
 
   - Asynchronous events with `userEvent`
-  - Synchronous events
+  - Synchronous events on elements, e.g. `element.click`
 
 - `findBy` queries
 
   - For getting elements asynchronously
   - Use when you need to wait for a promise or rerender
+  - Implicit expectation: Throws when element not found
 
 - `queryBy` queries
 
