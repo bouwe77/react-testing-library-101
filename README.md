@@ -2,7 +2,7 @@
 
 An introduction to testing React components with Testing Library.
 
-It's about how to do the actual testing, but not about setting up your environment, etc.
+It's about how to do the actual testing, and not about setting up your environment, etc.
 
 # Topics
 
