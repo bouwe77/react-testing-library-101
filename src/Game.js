@@ -3,7 +3,7 @@ import { useState } from 'react'
 const story = {
   field: {
     texts: [
-      'You are on your horse, in the fields, staring into the distance. There, you can see a castle.',
+      'There, in the distance, you can see a castle.',
       'On your right is the forest.',
     ],
     directions: { 'Go to the castle': 'castle', 'Head into the forest': 'forest' },
@@ -41,7 +41,6 @@ function Game() {
     <>
       <h1>My Adventure Game</h1>
 
-      {/* TODO Deze tekst alleen bij de eerste render, dus een mooie use case om later een NOT in the document te doen... */}
       {!gameStarted ? (
         <p>
           You are a brave knight who has been given a quest by the king. You must find the princess and save her from
