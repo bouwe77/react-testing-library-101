@@ -11,7 +11,7 @@ test('My Adventure Game', async () => {
     'You are a brave knight who has been given a quest by the king. You must find the princess and save her from the evil dragon. You are riding through the fields.',
   )
 
-  screen.getByText('You are on your horse, in the fields, staring into the distance. There, you can see a castle.')
+  screen.getByText('There, in the distance, you can see a castle.')
   screen.getByText('On your right is the forest.')
 
   // I just wanna know the "Head into the forest" button's there
