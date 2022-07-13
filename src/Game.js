@@ -1,11 +1,9 @@
 import { useState } from 'react'
+import Button from './Button'
 
 const story = {
   field: {
-    texts: [
-      'There, in the distance, you can see a castle.',
-      'On your right is the forest.',
-    ],
+    texts: ['There, in the distance, you can see a castle.', 'On your right is the forest.'],
     directions: { 'Go to the castle': 'castle', 'Head into the forest': 'forest' },
   },
   castle: {
@@ -60,14 +58,6 @@ function Game() {
         ))}
       </div>
     </>
-  )
-}
-
-function Button({ children, ...rest }) {
-  return (
-    <button style={{ margin: '10px 20px 0px 0px' }} {...rest}>
-      {children}
-    </button>
   )
 }
 
