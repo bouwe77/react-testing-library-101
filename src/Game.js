@@ -26,7 +26,7 @@ const story = {
   },
 }
 
-function Game() {
+const Game = () => {
   const [location, setLocation] = useState('field')
   const [gameStarted, setGameStarted] = useState(false)
 
