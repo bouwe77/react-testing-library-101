@@ -14,8 +14,6 @@ It's about how to do the actual testing, and not about setting up your environme
 
 - Rendering components
 
-- Scope of a test: integration vs unit
-
 - Debugging with `screen.debug`
 
 - `getBy` queries
@@ -47,11 +45,13 @@ It's about how to do the actual testing, and not about setting up your environme
   - `await findBy`
   - `queryBy`
 
+- Scope of a test: integration vs unit
+
 - Avoiding testids and other implementation details
 
-- Making components a11y through tests
-
 # Not in scope
+
+- Making components a11y through tests
 
 - Setting up a project with Jest, etc. (will not cover this at all)
 
